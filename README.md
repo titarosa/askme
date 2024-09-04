@@ -5,7 +5,7 @@ Welcome to AskME. This web application allows users to post questions and answer
 ## Features
 * Liking and Disliking questions.
 * Allows users to upload images realated to questions.
-* 
+* Commenting on questions and answers. 
 
 
 ##License
