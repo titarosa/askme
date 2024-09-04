@@ -1,6 +1,6 @@
 AskME 
 
-Welcome to AskME. This web application allows users to post anonymous questions on a question and answer dashboard. 
+Welcome to AskME. This web application allows users to post questions and answers on a dashboard. All questions and answers are anonymous and can be liked or disliked by other users. 
 
 ## Features
 * Liking and Disliking questions.
