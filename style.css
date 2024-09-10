@@ -1,0 +1,108 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+.create-post {
+  margin-bottom: 20px;
+}
+
+.create-post textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.create-post button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #0079d3;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.create-post button:hover {
+  background-color: #005fa3;
+}
+
+.post {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+}
+
+.post-content {
+  margin-bottom: 10px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+}
+
+.actions button {
+  margin-right: 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.actions button:hover {
+  color: #0079d3;
+}
+
+.comment-section {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.comment-section textarea {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.comment-section button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #0079d3;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.comment-section button:hover {
+  background-color: #005fa3;
+}
+
+.comment {
+  margin-top: 10px;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+.likes {
+  margin-right: 10px;
+}
