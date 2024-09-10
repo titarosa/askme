@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- reset css -->
+     <link rel="stylesheet" href="./assets/css/reset.css">
+     <!-- styles -->
+      <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>askME</h1>
+            <div id="login-section" class="login-section">
+                <h2 id="login-header">Login</h2>
+                <input type="text" id="username" placeholder="Username">
+                <button onclick="login()">Login</button>
+                <button onclick="logout()" id="logout-button" style="display: none;">Logout</button>
+            </div>
+        </header>
+
+        <main>
+            <div id="qa-container">
+                <!-- Questions and answers will be inserted here -->
+            </div>
+
+            <section class="add-post">
+                <h2>Add a New Question</h2>
+                <textarea id="question-input" placeholder="Enter your question" rows="3"></textarea>
+                <button onclick="addQuestion()">Submit</button>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
