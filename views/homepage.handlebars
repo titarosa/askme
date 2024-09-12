@@ -1,0 +1,42 @@
+<h1>askME</h1>
+
+{{#if logged_in}}
+  <div class="create-post">
+    <textarea id="postInput" placeholder="Ask Me Anything?" rows="3"></textarea>
+    <button id="postBtn">Post</button>
+  </div>
+{{else}}
+  <p>Please <a href="/login">login</a> to ask a question.</p>
+{{/if}}
+
+<div id="posts">
+  {{#each posts}}
+    <div class="post">
+      <div class="post-content">{{this.content}}</div>
+      <div class="actions">
+        <span class="likes">Likes: {{this.likes}}</span>
+        <button class="like-btn" data-id="{{this.id}}">Like</button>
+        <button class="dislike-btn" data-id="{{this.id}}">Dislike</button>
+        <button class="comment-btn" data-id="{{this.id}}">Comment</button>
+      </div>
+      <div class="comment-section">
+        <textarea placeholder="Write a comment..."></textarea>
+        <button class="add-comment-btn" data-id="{{this.id}}">Add Comment</button>
+        <div class="comments">
+          {{#each this.comments}}
+            <div class="comment">
+              <div class="comment-content">{{this.content}}</div>
+              <div class="actions">
+                <span class="likes">Likes: {{this.likes}}</span>
+                <button class="like-btn" data-id="{{this.id}}">Like</button>
+                <button class="dislike-btn" data-id="{{this.id}}">Dislike</button>
+              </div>
+            </div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  {{else}}
+    <p>No posts yet. Be the first to ask a question!</p>
+  {{/each}}
+</div>

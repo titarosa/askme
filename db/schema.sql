@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS askme_db;
+CREATE DATABASE askme_db;
