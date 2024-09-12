@@ -1,8 +1,6 @@
-<h1>askME</h1>
-
 {{#if logged_in}}
   <div class="create-post">
-    <textarea id="postInput" placeholder="Ask Me Anything?" rows="3"></textarea>
+    <textarea id="postInput" placeholder="Ask Something!" rows="3"></textarea>
     <button id="postBtn">Post</button>
   </div>
 {{else}}
@@ -15,6 +13,7 @@
       <div class="post-content">{{this.content}}</div>
       <div class="actions">
         <span class="likes">Likes: {{this.likes}}</span>
+        <span class="dislikes">Dislikes: {{this.dislikes}}</span>
         <button class="like-btn" data-id="{{this.id}}">Like</button>
         <button class="dislike-btn" data-id="{{this.id}}">Dislike</button>
         <button class="comment-btn" data-id="{{this.id}}">Comment</button>
@@ -28,6 +27,7 @@
               <div class="comment-content">{{this.content}}</div>
               <div class="actions">
                 <span class="likes">Likes: {{this.likes}}</span>
+                <span class="dislikes">Dislikes: {{this.dislikes}}</span>
                 <button class="like-btn" data-id="{{this.id}}">Like</button>
                 <button class="dislike-btn" data-id="{{this.id}}">Dislike</button>
               </div>
@@ -40,3 +40,4 @@
     <p>No posts yet. Be the first to ask a question!</p>
   {{/each}}
 </div>
+

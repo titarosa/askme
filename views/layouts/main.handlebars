@@ -8,8 +8,26 @@
 </head>
 <body>
     <div class="container">
+        <header>
+            <h1>askME</h1>
+            <nav>
+                {{#if logged_in}}
+                <a href="/" id="logout">Logout</a>
+                {{else}}
+                <a href="/login">Login</a>
+                <a href="/signup">Sign Up</a>
+                {{/if}}
+            </nav>
+        </header>
         {{{ body }}}
     </div>
+    {{#if logged_in}}
+    <script src="/js/logout.js"></script>
+    {{/if}}
+    {{#if isHomePage}}
+  <script src="/js/script.js"></script>
+    {{/if}}
     <script src="/js/script.js"></script>
 </body>
 </html>
+
